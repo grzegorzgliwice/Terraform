@@ -1,0 +1,14 @@
+variable "username" {
+description = "Twoje imię"
+type = string
+default = "Grzegorz"
+}
+
+resource "local_file" "user_file" {
+filename = "${path.module}/$me.txt"
+content = "Moje imię to: ${var.username}"
+}
+
+output "user_file_path" {
+value = local_file.user_file.filename
+}
