@@ -1,0 +1,4 @@
+Raport Terraform
+----------------
+Uczestnik: Jan Nowak
+Temat:     Przykladowy raport
